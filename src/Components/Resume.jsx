@@ -47,16 +47,15 @@ const Resume = () => {
                             <h1 className='text-[50px] font-bold mb-5'>Resume</h1>
                         </div>
 
-                        <div className='w-full my-4 flex flex-col items-center mx-4'>
-                            <p className='text-[#8e8e8e] text-lg' >A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic</p>
-                            <p className='text-[#8e8e8e] text-lg' >country, in which roasted parts of sentences fly into your mouth.</p>
+                        <div className='w-full my-4 flex flex-col  items-center justify-center text-center '>
+                          <p className='text-lg text-[#8e8e8e] md:w-[80%] w-full'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                         </div>
 
                         <div className="mt-8 ">
                             <div className='grid md:grid-cols-2 grid-cols-1 gap-5 mx-4 md:mx-6 lg:mx-16 '>
                                 {
                                     resume.map((item, index) => (
-                                        <div key={index} className='bg-[#1a1a1a] rounded-lg px-8'>
+                                        <div key={index} className='bg-[#1a1a1a] rounded-lg px-8 md:text-start text-center'>
                                             <h1 className='text-[#ffbd39] font-bold text-3xl mt-6 mb-3 '>{item.year}</h1>
                                             <p className='font-bold text-2xl mb-2'>{item.degree}</p>
                                             <p className='text-[#8e8e8e] my-4 '>{item.institution}</p>

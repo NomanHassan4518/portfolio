@@ -7,7 +7,7 @@ const Skills = () => {
         threshold: 0,    // Adjust this threshold as needed
     });
 
-  
+
 
     return (
         <section id='skills' className='relative w-full mt-20 lg:px-16'>

@@ -8,6 +8,7 @@ import Services from "./Components/Services";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Blog from "./Components/Blog";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -41,6 +42,10 @@ function App() {
 
        <div>
        <Blog/>
+       </div>
+
+       <div>
+        <Contact/>
        </div>
       </BrowserRouter>
     </>

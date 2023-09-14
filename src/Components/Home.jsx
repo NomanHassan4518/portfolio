@@ -12,7 +12,7 @@ const Home = () => {
     speed: 1000,
     slidesToShow: 1, // Number of slides to show at once
     slidesToScroll: 1,
-    // autoplay: true, // Enable autoplay
+    autoplay: true, // Enable autoplay
     autoplaySpeed: 4000, // Autoplay speed in milliseconds
     arrows: false,
     pauseOnHover: false, // Prevent pause on hover
@@ -48,9 +48,9 @@ const Home = () => {
       <div>
         <Slider {...settings}>
           {slidesData.map((slide, index) => (
-            <div className={`lg:px-12 w-full md:h-[72rem] border-2 border-red-600  !grid grid-cols-12  hover:cursor-pointer  `} key={index} >
-              <div className=' lg:col-span-6 col-span-12 ' >
-                <div className=' h-[35rem] flex justify-start mt-12 md:mt-0 items-center   md:justify-center md:items-center lg:items-start  px-5 flex-col lg:space-y-7 slide-content'>
+            <div className={`xl:px-12 w-full md:h-[55rem] lg:h-[40rem] xl:h-[50rem]    !grid grid-cols-12  hover:cursor-pointer  `} key={index} >
+              <div className='  lg:col-span-6 col-span-12 ' >
+                <div className='  h-[35rem] md:h-[55rem]  flex justify-start mt-12  md:mt-10 items-center    md:justify-start md:items-center lg:items-start  px-5 flex-col lg:space-y-7 slide-content '>
                   <p className='text-[#ffbd39]  font-semibold text-lg  '>{slide.heading}</p>
                   <div className='flex lg:flex-col md:flex-row flex-col items-center md:items-start'>
                     <div className='flex space-x-2 font-[900]  lg:text-[70px] text-5xl '>
@@ -73,8 +73,10 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className='lg:col-span-6 col-span-12 absolute lg:top-0 top-10 border-2 border-red-600    lg:z-50  z-[-1] lg:relative lg:h-[40rem]   flex justify-center items-center '>
-                <img src={slide.img} alt="" className='w-full h-[full] object-cover  ' />
+              <div className="  lg:col-span-6 absolute lg:relative w-[40%] lg:w-full h-full md:top-0 top-20  z-[-1] lg:top-0 ">
+                <div className=' '>
+                  <img src={slide.img} alt="" className='lg:w-full w-[50%] h-full  absolute md:top-[-30px] lg:top-[-100px] object-cover  ' />
+                </div>
               </div>
             </div>
           ))}

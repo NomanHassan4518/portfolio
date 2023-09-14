@@ -27,7 +27,7 @@ const About = () => {
 
     countTo120();
 
-    return () => { }; // Empty cleanup function to prevent any issues
+    return () => { }; 
   }, [projectCount]);
   return (
     <section id='about' className='relative mt-[3rem] lg:px-12 w-full'>
@@ -39,13 +39,15 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 grid-cols-1 mx-4 gap-5">
             <div className='  items-start justify-center hidden md:flex'>
-              <img src={photo1} alt="" className='h-full object-cover'/>
+              <img src={photo1} alt="" className='h-full object-cover' />
             </div>
 
             <div className='w-full h-full relative flex justify-center  flex-col'>
-              <h1 className='text-[7vw] font-[900] z-[-1] absolute top-0 left-0 text-[#ffffff1a]  '>About</h1>
-              <h1 className='text-[50px] font-bold mb-4'>About Me</h1>
-              <p className='text-lg mr-4 text-[#8e8e8e] font-semibold mt-8 '>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              <div className='w-full flex flex-col items-center relative'>
+                <h1 className='text-[7vw] font-[900] z-[-1] absolute top-0  text-[#ffffff1a]  '>About</h1>
+                <h1 className='text-[50px] font-bold mb-5'>About Me</h1>
+              </div>
+              <p className='text-lg mr-4 text-[#8e8e8e] font-semibold mt-8 text-center '>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               <ul className="mt-4 space-y-4">
                 <li className='flex lg:items-center items-strat'>
                   <p className='w-[150px] font-[600] text-xl '>Name:</p>

@@ -83,10 +83,23 @@ const Navbar = () => {
                         className='text-white relative after:w-full after:h-[2px] after:bg-[#ffbd39] after:absolute after:content=[""]  after:top-7 after:left-0 ease-in-out after:duration-500  after:transform after:origin-center after:scale-x-0 hover:after:origin-right hover:after:scale-x-100 hover:text-[#ffbd39] hover:cursor-pointer   '>My Blog</Link>
                   </li>
                   <li>
-                     <Link to='/' className='text-white relative after:w-full after:h-[2px] after:bg-[#ffbd39] after:absolute after:content=[""]  after:top-7 after:left-0 ease-in-out after:duration-500  after:transform after:origin-center after:scale-x-0 hover:after:origin-right hover:after:scale-x-100 hover:text-[#ffbd39] hover:cursor-pointer   '>Contact</Link>
+                     <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        className='text-white relative after:w-full after:h-[2px] after:bg-[#ffbd39] after:absolute after:content=[""]  after:top-7 after:left-0 ease-in-out after:duration-500  after:transform after:origin-center after:scale-x-0 hover:after:origin-right hover:after:scale-x-100 hover:text-[#ffbd39] hover:cursor-pointer   '>Contact</Link>
                   </li>
                </ul>
             </nav>
+         </div>
+
+         <div className="block lg:hidden">
+         <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 25.567 18"><g transform="translate(-776 -462)"><rect id="Rectangle_941" data-name="Rectangle 941" width="12.749" height="2.499" rx="1.25" transform="translate(776 462)" fill="currentColor"></rect><rect id="Rectangle_942" data-name="Rectangle 942" width="25.567" height="2.499" rx="1.25" transform="translate(776 469.75)" fill="currentColor"></rect><rect id="Rectangle_943" data-name="Rectangle 943" width="17.972" height="2.499" rx="1.25" transform="translate(776 477.501)" fill="currentColor"></rect></g></svg>
+            </button>
          </div>
       </header>
 

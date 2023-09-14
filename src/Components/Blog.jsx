@@ -60,7 +60,7 @@ const Blog = () => {
     ]
     return (
         <>
-            <section id='blog' className=' mt-[10rem]'>
+            <section id='blog' className='relative mt-[10rem]'>
                 <div className=" ">
                     <div
                         ref={ref}
@@ -76,23 +76,23 @@ const Blog = () => {
                                 </div>
                             </div>
 
-                            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-12'>
+                            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  mt-12'>
                                 {
                                     blog.map((item, index) => (
                                         <div>
-                                            <div className='w-96 h-72 px-4'>
+                                            <div className='lg:w-96 h-72 '>
                                                 <img src={item.img} alt="" className='w-full h-full object-cover' />
 
                                             </div>
 
-                                            <div className='w-96 h-80 px-4'>
-                                                <div className='flex space-x-5 items-center mt-3 text-[#ffbd39]'>
+                                            <div className='lg:w-96 h-80 px-4'>
+                                                <div className='flex space-x-5 items-center mt-3 text-[#ffbd39] text-center'>
                                                     <p>{item.date}</p>
                                                     <Link to="">{item.admin}</Link>
                                                     <p>{item.icon}</p>
                                                     <p>{item.value}</p>
                                                 </div>
-                                                <div className='mt-5 w-[87%]'>
+                                                <div className='mt-5 w-[87%] text-center'>
                                                     <Link to="" className='font-bold text-xl hover:text-[#ffbd39] '>{item.title}</Link>
                                                     <p className='mt-4 text-[#8e8e8e] text-lg'>{item.description}</p>
                                                 </div>
@@ -104,7 +104,7 @@ const Blog = () => {
                             </div>
                         </div>
 
-                        <div className='relative '>
+                       
                             <div className='grid md:grid-cols-4  grid-cols-1 mt-0 z-[200] gap-5 lg:px-12 w-full '>
                                 {
                                     count.map((item, index) => (
@@ -119,8 +119,8 @@ const Blog = () => {
 
                             </div>
 
-                            <div className='absolute z-[-1] mt-[-4rem] h-[32rem] w-full flex flex-col justify-center items-center ' >
-                                <img src="https://themewagon.github.io/clark/images/bg_1.jpg" className='w-full h-full z-[-1] absolute object-cover' alt="" />
+                            <section className='relative mt-[-4rem]  h-[32rem] w-full flex flex-col justify-center items-center ' >
+                                <img src="https://themewagon.github.io/clark/images/bg_1.jpg" className='w-full h-full  object-cover absolute z-[-1]' alt="" />
                                 <div className='text-[40px] text-center font-[900] space-x-2 '>
                                     <span>I'm</span>
                                     <span className='text-[#ffbd39]'>Available</span>
@@ -133,8 +133,8 @@ const Blog = () => {
                                 <div className="mt-8 w-full flex items-center justify-center">
                                     <button className='uppercase py-4 px-8 bg-[#ffbd39] text-gray-900 rounded-full font-semibold'>hire me</button>
                                 </div>
-                            </div>
-                        </div>
+                            </section>
+                      
 
 
                     </div>
