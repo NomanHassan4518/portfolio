@@ -56,4 +56,10 @@
     /* opacity: 1; */
     transform: scale(1);
     }
- 
+
+  
+ .ant-drawer-title{
+  font-weight: 700 !important;
+  font-size: larger !important;
+  text-align: center;
+ }

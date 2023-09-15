@@ -16,7 +16,6 @@ const Home = () => {
     autoplaySpeed: 4000, // Autoplay speed in milliseconds
     arrows: false,
     pauseOnHover: false, // Prevent pause on hover
-
   };
 
   const slidesData = [
@@ -43,7 +42,7 @@ const Home = () => {
   ];
 
   return (
-    <section id='home ' className=' relative '>
+    <section id='home' className=' relative '>
 
       <div>
         <Slider {...settings}>

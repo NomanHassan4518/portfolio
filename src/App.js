@@ -9,6 +9,7 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Blog from "./Components/Blog";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -46,6 +47,10 @@ function App() {
 
        <div>
         <Contact/>
+       </div>
+
+       <div>
+        <Footer/>
        </div>
       </BrowserRouter>
     </>

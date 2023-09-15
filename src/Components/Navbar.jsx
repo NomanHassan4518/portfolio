@@ -1,7 +1,52 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-scroll';
+import { Drawer } from 'antd';
 
 const Navbar = () => {
+   const [isOpen, setIsOpen] = useState(false)
+
+   const drawerOpen = () => {
+      setIsOpen(true)
+   }
+
+   const drawerClose = () => {
+      setIsOpen(false)
+   }
+
+   let navItem = [
+      {
+         url:"home",
+         name:"Home"
+      },
+      {
+         url:"about",
+         name:"About",
+      },
+      {
+         url:"resume",
+         name:"Resume",
+      },
+      {
+         url:"services",
+         name:"",
+      },
+      {
+         url:"skills",
+         name:"Skills",
+      },
+      {
+         url:"project",
+         name:"Projects",
+      },
+      {
+         url:"blog",
+         name:"My Blog",
+      },
+      {
+         url:"contact",
+         name:"Contact",
+      },
+   ]
    return (
 
       <header className='flex w-full  z-10 bg-black  h-20 px-12 items-center  justify-between sticky top-0'>
@@ -97,10 +142,40 @@ const Navbar = () => {
          </div>
 
          <div className="block lg:hidden">
-         <button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 25.567 18"><g transform="translate(-776 -462)"><rect id="Rectangle_941" data-name="Rectangle 941" width="12.749" height="2.499" rx="1.25" transform="translate(776 462)" fill="currentColor"></rect><rect id="Rectangle_942" data-name="Rectangle 942" width="25.567" height="2.499" rx="1.25" transform="translate(776 469.75)" fill="currentColor"></rect><rect id="Rectangle_943" data-name="Rectangle 943" width="17.972" height="2.499" rx="1.25" transform="translate(776 477.501)" fill="currentColor"></rect></g></svg>
+            <button onClick={drawerOpen}>
+               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 25.567 18"><g transform="translate(-776 -462)"><rect id="Rectangle_941" data-name="Rectangle 941" width="12.749" height="2.499" rx="1.25" transform="translate(776 462)" fill="currentColor"></rect><rect id="Rectangle_942" data-name="Rectangle 942" width="25.567" height="2.499" rx="1.25" transform="translate(776 469.75)" fill="currentColor"></rect><rect id="Rectangle_943" data-name="Rectangle 943" width="17.972" height="2.499" rx="1.25" transform="translate(776 477.501)" fill="currentColor"></rect></g></svg>
             </button>
          </div>
+
+         <Drawer
+            title="Portfolio"
+            open={isOpen}
+            onClose={drawerClose}
+            direction='right'
+            className='drawer'
+         >
+            <div>
+               <ul className='space-y-6'>
+                {
+                  navItem.map((item)=>(
+                     <li >
+                     <Link
+                        activeClass="active"
+                        to={item.url}
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        onClick={drawerClose}
+                        className='text-black cursor-pointer text-xl'
+                     >{item.name}</Link>
+
+                  </li>
+                  ))
+                }
+               </ul>
+            </div>
+         </Drawer>
       </header>
 
    )

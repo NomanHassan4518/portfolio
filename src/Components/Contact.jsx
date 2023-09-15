@@ -34,7 +34,7 @@ const Contact = () => {
         }
     ]
     return (
-        <section id='contact' className='relative  mt-[7rem] lg:px-12 w-full '>
+        <section id='contact' className='relative  mt-[7rem] lg:px-12 sm:px-2 w-full '>
             <div className="container relative">
                 <div
                     ref={ref}
@@ -52,10 +52,6 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div
-                    ref={ref}
-                    className={`item ${inView ? 'reveal' : ''}`}
-                >
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:my-24'>
                         {
                             contact.map((item, index) => (
@@ -75,11 +71,8 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div
-                    ref={ref}
-                    className={`item xl:px-16 md:px-6 mt-12 ${inView ? 'reveal' : ''}`}
-                >
-                    <div className='md:grid grid-cols-2 gap-0 flex flex-col-reverse md:px-0 px-6'>
+              
+                    <div className='md:grid grid-cols-2 gap-0 mt-12 flex flex-col-reverse md:px-0 px-6'>
                         <div className=' bg-[#1e1e1e] flex items-start justify-center'>
                             <img src={photo1} alt="" />
                         </div>
@@ -102,8 +95,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+            
         </section>
     )
 }

@@ -12,34 +12,34 @@ const Projects = () => {
         {
             img: "https://themewagon.github.io/clark/images/project-4.jpg",
             name: "Web Design",
-            title:"Branding & Illustration Design"
+            title: "Branding & Illustration Design"
         },
         {
             img: "https://themewagon.github.io/clark/images/project-5.jpg",
             name: "Web Design",
-            title:"Branding & Illustration Design"
+            title: "Branding & Illustration Design"
         },
 
         {
             img: "https://themewagon.github.io/clark/images/project-1.jpg",
             name: "Web Design",
-            title:"Branding & Illustration Design"
+            title: "Branding & Illustration Design"
         },
 
         {
             img: "https://themewagon.github.io/clark/images/project-2.jpg",
             name: "Web Design",
-            title:"Branding & Illustration Design"
+            title: "Branding & Illustration Design"
         },
         {
             img: "https://themewagon.github.io/clark/images/project-6.jpg",
             name: "Web Design",
-            title:"Branding & Illustration Design"
+            title: "Branding & Illustration Design"
         },
         {
             img: "https://themewagon.github.io/clark/images/project-3.jpg",
             name: "Web Design",
-            title:"Branding & Illustration Design"
+            title: "Branding & Illustration Design"
         },
 
     ]
@@ -81,10 +81,10 @@ const Projects = () => {
                 </div>
             </div>
 
-           
+
         </section>
 
-       
+
     )
 }
 
