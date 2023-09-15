@@ -43,7 +43,6 @@ const Home = () => {
 
   return (
     <section id='home' className=' relative '>
-
       <div>
         <Slider {...settings}>
           {slidesData.map((slide, index) => (
