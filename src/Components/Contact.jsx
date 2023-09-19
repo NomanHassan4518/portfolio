@@ -29,7 +29,7 @@ const Contact = () => {
         {
             icon: <FaGlobeAfrica />,
             name: "website",
-            description: "yoursite.com"
+            description: "https://portfolio-6nwt.vercel.app/"
         }
     ]
     return (
