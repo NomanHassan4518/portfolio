@@ -2,7 +2,7 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import zooki from '../zooki_product.jpg'
 import ignite from '../ignite.jpg'
-import textutils from '../textUtils.jpg'
+import businex from '../businex.jpg'
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -26,10 +26,10 @@ const Projects = () => {
         },
 
         {
-            img: textutils,
-            name: "TextUtils",
-            title: "Enter the text to Analyze text",
-            url:"https://texttutils-eight.vercel.app/"
+            img: businex,
+            name: "Businex",
+            title: "Provide best Business Solutions",
+            url:"https://businex-l2sc.vercel.app/"
         },
 
         {
