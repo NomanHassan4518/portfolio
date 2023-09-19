@@ -54,7 +54,7 @@ const About = () => {
                 </li>
               </ul>
 
-              <p className='text-2xl mt-6 font-semibold'><span className='text-[#ffbd39]'>3</span> Projects complete</p>
+              <p className='text-2xl mt-6 font-semibold'><span className='text-[#ffbd39]'>4</span> Projects complete</p>
               <div className='mt-8'>
                 <Link to={cv} target="_blank" download  className=' font-semibold  bg-[#ffbd39] py-3 px-4 uppercase  border-[1px] border-black   focus:border-blue-400 focus:border-[1px] rounded-full text-black ' >Download CV</Link>
               </div>
