@@ -4,7 +4,6 @@ import { BsFillSignpost2Fill } from 'react-icons/bs'
 import { IoMdCall } from 'react-icons/io'
 import { SiMinutemailer } from 'react-icons/si'
 import { FaGlobeAfrica } from 'react-icons/fa'
-import photo1 from '../photo1.png'
 
 const Contact = () => {
     const [ref, inView] = useInView({
@@ -16,7 +15,7 @@ const Contact = () => {
         {
             icon: <BsFillSignpost2Fill />,
             name: "Address",
-            description: "Chungi Amar Sidhu Lahore"
+            description: "Islamabad"
         },
         {
             icon: <IoMdCall />,
@@ -62,7 +61,7 @@ const Contact = () => {
                                     </div>
                                     <div className='text-center'>
                                         <p className='uppercase text-xl my-6 font-semibold'>{item.name}</p>
-                                        <p className={`${index === 0 ? "text-lg text-[#8e8e8e] font-[400]" : "text-lg text-white font-semibold"}`}>{item.description}</p>
+                                        <p className="text-lg text-white font-semibold">{item.description}</p>
                                     </div>
                                 </div>
 
@@ -72,7 +71,7 @@ const Contact = () => {
                 </div>
 
               
-                    <div className='md:grid grid-cols-2 gap-0 mt-12 flex flex-col-reverse md:px-0 px-6'>
+                    {/* <div className='md:grid grid-cols-2 gap-0 mt-12 flex flex-col-reverse md:px-0 px-6'>
                         <div className=' bg-[#1e1e1e] flex items-start justify-center'>
                             <img src={photo1} alt="" />
                         </div>
@@ -94,7 +93,7 @@ const Contact = () => {
                                 <button className='uppercase py-4 px-12 rounded-full bg-[#ffbd39] text-black font-semibold'>send message</button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
             
         </section>
     )

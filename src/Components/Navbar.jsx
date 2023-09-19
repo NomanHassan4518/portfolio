@@ -26,10 +26,7 @@ const Navbar = () => {
          url:"resume",
          name:"Resume",
       },
-      {
-         url:"services",
-         name:"",
-      },
+     
       {
          url:"skills",
          name:"Skills",
@@ -38,10 +35,7 @@ const Navbar = () => {
          url:"project",
          name:"Projects",
       },
-      {
-         url:"blog",
-         name:"My Blog",
-      },
+    
       {
          url:"contact",
          name:"Contact",
@@ -87,16 +81,7 @@ const Navbar = () => {
                         duration={500}
                         className='text-white relative after:w-full after:h-[2px] after:bg-[#ffbd39] after:absolute after:content=[""]  after:top-7 after:left-0 ease-in-out after:duration-500  after:transform after:origin-center after:scale-x-0 hover:after:origin-right hover:after:scale-x-100 hover:text-[#ffbd39] hover:cursor-pointer   '>Resume</Link>
                   </li>
-                  <li>
-                     <Link
-                        activeClass="active"
-                        to="services"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        className='text-white relative after:w-0 after:h-[2px] after:bg-[#ffbd39] after:absolute after:content=[""]  after:top-7 after:left-0 ease-in-out after:duration-500 transition hover:after:w-full hover:text-[#ffbd39] hover:cursor-pointer   '>Services</Link>
-                  </li>
+               
                   <li>
                      <Link
                         activeClass="active"
@@ -117,16 +102,7 @@ const Navbar = () => {
                         duration={500}
                         className='text-white relative after:w-full after:h-[2px] after:bg-[#ffbd39] after:absolute after:content=[""]  after:top-7 after:left-0 ease-in-out after:duration-500  after:transform after:origin-center after:scale-x-0 hover:after:origin-right hover:after:scale-x-100 hover:text-[#ffbd39] hover:cursor-pointer'>Projects</Link>
                   </li>
-                  <li>
-                     <Link
-                        activeClass="active"
-                        to="blog"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        className='text-white relative after:w-full after:h-[2px] after:bg-[#ffbd39] after:absolute after:content=[""]  after:top-7 after:left-0 ease-in-out after:duration-500  after:transform after:origin-center after:scale-x-0 hover:after:origin-right hover:after:scale-x-100 hover:text-[#ffbd39] hover:cursor-pointer   '>My Blog</Link>
-                  </li>
+               
                   <li>
                      <Link
                         activeClass="active"

@@ -9,24 +9,7 @@ const Resume = () => {
     });
 
     const resume = [
-        {
-            year: "2017-2019",
-            degree: "Matric in Computer Science",
-            institution: "Govt. High School Dherowal Sargodha",
-            description: "Throughout high school, I've excelled academically, consistently achieving top grades. I've also actively engaged in various extracurricular activities, demonstrating leadership and teamwork skills."
-        },
-        {
-            year: "2019-2021",
-            degree: "FSc Enginnering",
-            institution: "The Punjab Science Group of Colleges Jauharabad Khushab",
-            description: "In college, I've pursued academic excellence, pushing the boundaries of my chosen field and exploring diverse subjects. Alongside my studies, I've actively engaged in leadership roles and community initiatives."
-        },
-        {
-            year: "2021-2025",
-            degree: "BS in Computer Science",
-            institution: "International Islamic University Islamabad",
-            description: "As a current university student, I'm on an inspiring academic journey marked by a dedication to learning and personal development. With my degree anticipated to conclude in 2025"
-        },
+     
         {
             year: "06/2023-09/2023",
             degree: "InternShip",
@@ -52,23 +35,21 @@ const Resume = () => {
                         </div>
 
                         <div className="mt-8 ">
-                            <div className='grid md:grid-cols-2 grid-cols-1 gap-5 mx-4 md:mx-6 lg:mx-16 '>
+                            <div className='grid grid-cols-1 gap-5 mx-4 md:mx-6 lg:mx-16 '>
                                 {
                                     resume.map((item, index) => (
-                                        <div key={index} className='bg-[#1a1a1a] rounded-lg px-8 md:text-start text-center'>
+                                        <div key={index} className='bg-[#1a1a1a]  rounded-lg px-8 flex flex-col items-center  md:text-start text-center'>
                                             <h1 className='text-[#ffbd39] font-bold text-3xl mt-6 mb-3 '>{item.year}</h1>
-                                            <p className='font-bold text-2xl mb-2'>{item.degree}</p>
+                                            <p className='font-bold text-2xl mb-2 '>{item.degree}</p>
                                             <p className='text-[#8e8e8e] my-4 '>{item.institution}</p>
-                                            <p className='text-[#8e8e8e] mt-4 mb-8'>{item.description}</p>
+                                            <p className='text-[#8e8e8e] mt-4 mb-8 text-center'>{item.description}</p>
                                         </div>
                                     ))
                                 }
                             </div>
                         </div>
 
-                        <div className="mt-8 w-full flex items-center justify-center">
-                            <button className='uppercase py-4 px-8 bg-[#ffbd39] text-gray-900 rounded-full font-semibold'>download cv</button>
-                        </div>
+                       
                     </div>
                 </div>
             </div>

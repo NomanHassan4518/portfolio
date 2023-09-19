@@ -4,10 +4,8 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import Resume from "./Components/Resume";
-import Services from "./Components/Services";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
-import Blog from "./Components/Blog";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
@@ -29,9 +27,7 @@ function App() {
           <Resume />
         </div>
 
-        <div>
-          <Services />
-        </div>
+       
 
         <div>
           <Skills/>
@@ -41,9 +37,6 @@ function App() {
           <Projects/>
         </div>
 
-       <div>
-       <Blog/>
-       </div>
 
        <div>
         <Contact/>

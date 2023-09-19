@@ -1,7 +1,4 @@
 import React from 'react'
-import { FaXTwitter } from 'react-icons/fa6'
-import { FaFacebookF } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
 import { MdOutlineArrowRightAlt } from 'react-icons/md'
 import { IoLocation } from 'react-icons/io5'
 import { IoMdCall } from 'react-icons/io'
@@ -12,21 +9,11 @@ const Footer = () => {
  
   return (
     <section className='xl:px-16 px-5 my-20'>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-1">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-1">
         <div className=" px-4 ">
           <h1 className='my-6 text-3xl font-bold'>About</h1>
           <p className=' text-[#b3b3a8] font-semibold text-lg'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          <div className='mt-12 flex space-x-5'>
-            <div className='bg-[#1a1a1a] text-[#a3a3a3] text-[20px] w-[50px] h-[50px] flex items-center justify-center  rounded-full'>
-              <p><FaXTwitter /></p>
-            </div>
-            <div className='bg-[#1a1a1a] text-[#a3a3a3] text-[20px] w-[50px] h-[50px] flex items-center justify-center  rounded-full'>
-              <p><FaFacebookF /></p>
-            </div>
-            <div className='bg-[#1a1a1a] text-[#a3a3a3] text-[20px] w-[50px] h-[50px] flex items-center justify-center  rounded-full'>
-              <p><FaInstagram /></p>
-            </div>
-          </div>
+       
         </div>
 
 
@@ -108,82 +95,7 @@ const Footer = () => {
         </div>
 
 
-        <div className=" flex flex-col md:items-center">
-          <div className=" px-4">
-            <h1 className='my-6 text-3xl font-bold'>Services</h1>
-            <ul className='space-y-2 text-[#b3b3a8]'>
-              <li>
-                <Link
-                  activeClass="active"
-                  to=""
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className='flex items-center space-x-1 text-lg cursor-pointer'>
-                  <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
-                  <span>Web Design</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  activeClass="active"
-                  to=""
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className='flex items-center space-x-1 text-lg cursor-pointer'>
-                  <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
-                  <span>Web Development</span>
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  activeClass="active"
-                  to=""
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className='flex items-center space-x-1 text-lg cursor-pointer'>
-                  <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
-                  <span>Business Strategy</span>
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  activeClass="active"
-                  to=""
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className='flex items-center space-x-1 text-lg cursor-pointer'>
-                  <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
-                  <span>Data Analysis</span>
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  activeClass="active"
-                  to=""
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className='flex items-center space-x-1 text-lg cursor-pointer'>
-                  <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
-                  <span>Graphic Design</span>
-                </Link>
-              </li>
-            </ul>
-
-          </div>
-        </div>
+  
 
         <div className=" flex flex-col md:items-center">
           <div className=" px-4">

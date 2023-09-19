@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import photo1 from '../photo1.png'
+import cv from '../CV.pdf'
 
 
 const About = () => {
@@ -9,26 +10,7 @@ const About = () => {
     triggerOnce: true, // Only trigger once when the element enters the viewport
     threshold: 0.5,    // Adjust this threshold as needed
   });
-  const [projectCount, setProjectCount] = useState(1);
 
-  useEffect(() => {
-    const countTo120 = async () => {
-      // setProjectCount(0)
-      if (projectCount <= 120) {
-        await new Promise((resolve) => setTimeout(resolve, 100)); // Wait for 2 seconds
-        setProjectCount((prevCount) => prevCount + 1);
-      }
-
-      else {
-        setProjectCount(projectCount)
-      }
-
-    };
-
-    countTo120();
-
-    return () => { }; 
-  }, [projectCount]);
   return (
     <section id='about' className='relative mt-[3rem] lg:px-12 w-full'>
       <div className="container">
@@ -53,17 +35,14 @@ const About = () => {
                   <p className='w-[150px] font-[600] text-xl '>Name:</p>
                   <span className='text-[#8e8e8e] font-semibold'>Noman Hassan</span>
                 </li>
-                <li className='flex items-start lg:items-center  '>
-                  <p className='w-[150px] font-[600] text-xl '>Date of birth:</p>
-                  <span className='text-[#8e8e8e] font-semibold'>September 12, 2004</span>
-                </li>
+            
                 <li className='flex lg:items-center items-strat'>
                   <p className='w-[150px] font-[600] text-xl '>Address:</p>
-                  <span className='text-[#8e8e8e] font-semibold'>Chungi Amar Sidhu Lahore</span>
+                  <span className='text-[#8e8e8e] font-semibold'>Islamabad</span>
                 </li>
                 <li className='flex lg:items-center items-strat'>
                   <p className='w-[150px] font-[600] text-xl '>Zip code:</p>
-                  <span className='text-[#8e8e8e] font-semibold'>4400</span>
+                  <span className='text-[#8e8e8e] font-semibold'>44210</span>
                 </li>
                 <li className='flex lg:items-center items-strat'>
                   <p className='w-[150px] font-[600] text-xl '>Email:</p>
@@ -75,9 +54,9 @@ const About = () => {
                 </li>
               </ul>
 
-              <p className='text-2xl mt-6 font-semibold'><span className='text-[#ffbd39]'>{projectCount}</span> Projects complete</p>
+              <p className='text-2xl mt-6 font-semibold'><span className='text-[#ffbd39]'>3</span> Projects complete</p>
               <div className='mt-8'>
-                <Link to="/" className=' font-semibold  bg-[#ffbd39] py-3 px-4 uppercase  border-[1px] border-black   focus:border-blue-400 focus:border-[1px] rounded-full text-black '>Download CV</Link>
+                <Link to={cv} target="_blank" download  className=' font-semibold  bg-[#ffbd39] py-3 px-4 uppercase  border-[1px] border-black   focus:border-blue-400 focus:border-[1px] rounded-full text-black ' >Download CV</Link>
               </div>
             </div>
           </div>
