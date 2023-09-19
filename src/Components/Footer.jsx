@@ -103,7 +103,7 @@ const Footer = () => {
             <div className='text-[#b3b3a8] space-y-5 text-lg'>
               <div className='flex items-center space-x-3'>
                 <span><IoLocation /></span>
-                <span>Chungi Amar Sidhu Lahore</span>
+                <span>Islamabad</span>
               </div>
               <div className='flex items-center space-x-3'>
                 <span><IoMdCall /></span>
@@ -117,9 +117,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-<div className="mt-20 w-full text-center text-[#a3a3a3] text-xl">
-  <p>Copyright ©2023 All rights reserved | This template is made with  by Colorlib</p>
-</div>
+
 
     </section>
   )
