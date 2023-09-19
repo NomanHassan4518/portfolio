@@ -4,6 +4,7 @@ import { BsFillSignpost2Fill } from 'react-icons/bs'
 import { IoMdCall } from 'react-icons/io'
 import { SiMinutemailer } from 'react-icons/si'
 import { FaGlobeAfrica } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     const [ref, inView] = useInView({
@@ -61,7 +62,7 @@ const Contact = () => {
                                     </div>
                                     <div className='text-center'>
                                         <p className='uppercase text-xl my-6 font-semibold'>{item.name}</p>
-                                        <p className="text-lg text-white font-semibold">{item.description}</p>
+                                       {index===3 ? <Link className="text-lg text-white font-semibold" to={item.description}>{item.description}</Link>: <p className="text-lg text-white font-semibold">{item.description}</p>}
                                     </div>
                                 </div>
 
