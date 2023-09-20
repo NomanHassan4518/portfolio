@@ -62,7 +62,7 @@ const Contact = () => {
                                     </div>
                                     <div className='text-center'>
                                         <p className='uppercase text-xl my-6 font-semibold'>{item.name}</p>
-                                       {index===3 ? <Link className="text-lg text-white font-semibold" to={item.description}>{item.description}</Link>: <p className="text-lg text-white font-semibold">{item.description}</p>}
+                                       {index===3 ? <Link className="text-lg text-white font-semibold underline" to={item.description} target='_blank'>Portfolio</Link>: <p className="text-lg text-white font-semibold">{item.description}</p>}
                                     </div>
                                 </div>
 
