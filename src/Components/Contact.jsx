@@ -30,11 +30,11 @@ const Contact = () => {
         {
             icon: <FaGlobeAfrica />,
             name: "website",
-            description: "https://portfolio-6nwt.vercel.app/"
+            description: "https://nomanhassan.vercel.app/"
         }
     ]
     return (
-        <section id='contact' className='relative  mt-[7rem] lg:px-12 sm:px-2 w-full '>
+        <section id='contact'  className='relative  mt-[7rem] lg:px-12 sm:px-2 w-full '>
             <div className="container relative">
                 <div
                     ref={ref}
