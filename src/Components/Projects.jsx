@@ -67,7 +67,7 @@ const Projects = () => {
                                             <div className='absolute top-0 lg:bg-[#ffbd39]  h-full w-full lg:scale-0 scale-100 group-hover:scale-100  flex items-center justify-center  transition-all  duration-1000   ease-in-out '>
                                                 <div className='max-w-[70%]  text-center '>
                                                     <h1>
-                                                        <a href='#home' className='text-xl font-semibold '>{item.title}</a>
+                                                        <p  className='text-xl font-semibold '>{item.title}</p>
                                                         <p className='font-semibold text-gray-100 mt-4'>{item.name}</p>
                                                     </h1>
                                                 </div>
