@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import zooki from '../zooki_product.jpg'
 import ignite from '../ignite.jpg'
 import businex from '../businex.jpg'
+import weatherapp from '../weatherApp.jpg'
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -33,9 +34,9 @@ const Projects = () => {
         },
 
         {
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsPCmjlImWRblO46ou8vHVfnaiCykrNvVNtg&usqp=CAU",
-            name: "NewsMonkey",
-            title: "Daily News",
+            img: weatherapp,
+            name: "ClearSky",
+            title: "Weather Application",
             url:"https://monkey-news-7r3d.vercel.app/"
         },
       
