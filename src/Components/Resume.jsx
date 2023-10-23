@@ -38,7 +38,7 @@ const Resume = () => {
                             <div className='grid grid-cols-1 gap-5 mx-4 md:mx-6 lg:mx-16 '>
                                 {
                                     resume.map((item, index) => (
-                                        <div key={index} className='bg-[#1a1a1a]  rounded-lg px-8 flex flex-col items-center  md:text-start text-center'>
+                                        <div key={index} className='bg-[#1a1a1a]  rounded-lg px-1 md:px-8 flex flex-col items-center  md:text-start text-center'>
                                             <h1 className='text-[#ffbd39] font-bold text-3xl mt-6 mb-3 '>{item.year}</h1>
                                             <p className='font-bold text-2xl mb-2 '>{item.degree}</p>
                                             <p className='text-[#8e8e8e] my-4 '>{item.institution}</p>
