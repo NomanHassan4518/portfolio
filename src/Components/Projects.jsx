@@ -37,7 +37,7 @@ const Projects = () => {
             img: weatherapp,
             name: "ClearSky",
             title: "Weather Application",
-            url:"https://monkey-news-7r3d.vercel.app/"
+            url:"https://weatherapp-neon-pi.vercel.app/"
         },
       
 
