@@ -9,7 +9,7 @@ const Resume = () => {
     });
 
     const resume = [
-     
+
         {
             year: "06/2023-09/2023",
             degree: "InternShip",
@@ -31,25 +31,32 @@ const Resume = () => {
                         </div>
 
                         <div className='w-full my-4 flex flex-col  items-center justify-center text-center '>
-                          <p className='text-lg text-[#8e8e8e] md:w-[80%] w-full'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            <p className='text-lg text-[#8e8e8e] md:w-[80%] w-full'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                         </div>
 
-                        <div className="mt-8 ">
-                            <div className='grid grid-cols-1 gap-5 mx-4 md:mx-6 lg:mx-16 '>
+                        <div className="mt-8 flex items-center justify-center ">
+                            <div className='grid grid-cols-1  gap-5 mx-4 md:mx-6 lg:mx-16 '>
                                 {
                                     resume.map((item, index) => (
                                         <div key={index} className='bg-[#1a1a1a]  rounded-lg px-1 md:px-8 flex flex-col items-center  md:text-start text-center'>
-                                            <h1 className='text-[#ffbd39] font-bold text-3xl mt-6 mb-3 '>{item.year}</h1>
+                                            <h1 className='text-[#ffbd39] font-bold text-3xl mt-4 mb-2 '>{item.year}</h1>
                                             <p className='font-bold text-2xl mb-2 '>{item.degree}</p>
-                                            <p className='text-[#8e8e8e] my-4 '>{item.institution}</p>
-                                            <p className='text-[#8e8e8e] mt-4 mb-8 text-center'>{item.description}</p>
+                                            <p className='text-[#8e8e8e] my-2 '>{item.institution}</p>
+                                            <p className='text-[#8e8e8e] my-2  text-center'>{item.description}</p>
+                                            <p>
+                                                <p className='text-[#8e8e8e] my-2'>Work on Frontend library React JS.</p>
+                                                <p className='text-[#8e8e8e] my-2'>Work on CSS libraries like Bootstrap, Tailwind CSS.</p>
+                                                <p className='text-[#8e8e8e] my-2'>Work on API’s with axios and fetch methods.</p>
+                                                <p className='text-[#8e8e8e] my-2 mb-5'>Use Redux for global state management</p>
+
+                                            </p>
                                         </div>
                                     ))
                                 }
                             </div>
                         </div>
 
-                       
+
                     </div>
                 </div>
             </div>
