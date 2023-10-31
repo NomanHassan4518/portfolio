@@ -45,7 +45,7 @@ const Navbar = () => {
 
       <header className='flex w-full  z-10 bg-black  h-20 px-12 items-center  justify-between sticky top-0'>
          <div >
-            <Link to='/' className='text-white text-[30px] font-[900]'>Noman</Link>
+            <Link to='/' className='text-white text-[30px] font-[900] title'>Noman</Link>
          </div>
 
          <div className='hidden lg:block'>

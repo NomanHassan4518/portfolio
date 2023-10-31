@@ -9,5 +9,8 @@
         color: white;
       }
 
-      
+      .title{
+        font-family: "Agbalumo";
+        font-weight: 900;
+      }
 }

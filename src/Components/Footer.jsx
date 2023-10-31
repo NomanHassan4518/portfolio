@@ -29,7 +29,7 @@ const Footer = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className='flex items-center space-x-1 text-lg cursor-pointer'>
+                  className='flex items-center space-x-1 text-lg cursor-pointer hover:text-[#ffbd39]'>
                   <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
                   <span>Home</span>
                 </Link>
@@ -42,7 +42,7 @@ const Footer = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className='flex items-center space-x-1 text-lg cursor-pointer'>
+                  className='flex items-center space-x-1 text-lg cursor-pointer hover:text-[#ffbd39]'>
                   <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
                   <span>About</span>
                 </Link>
@@ -51,14 +51,14 @@ const Footer = () => {
               <li>
                 <Link
                   activeClass="active"
-                  to="services"
+                  to="resume"
                   spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className='flex items-center space-x-1 text-lg cursor-pointer'>
+                  className='flex items-center space-x-1 text-lg cursor-pointer hover:text-[#ffbd39]'>
                   <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
-                  <span>Services</span>
+                  <span>Resume</span>
                 </Link>
               </li>
 
@@ -70,7 +70,7 @@ const Footer = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className='flex items-center space-x-1 text-lg cursor-pointer'>
+                  className='flex items-center space-x-1 text-lg cursor-pointer hover:text-[#ffbd39]'>
                   <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
                   <span>Project</span>
                 </Link>
@@ -84,7 +84,7 @@ const Footer = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className='flex items-center space-x-1 text-lg cursor-pointer'>
+                  className='flex items-center space-x-1 text-lg cursor-pointer hover:text-[#ffbd39]'>
                   <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
                   <span>Contact</span>
                 </Link>
