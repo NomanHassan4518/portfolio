@@ -37,13 +37,16 @@ const Skills = () => {
                             </div>
 
                             <div className='relative mx-4'>
-                                <h1 className='font-semibold mb-3 text-2xl'>Tailwind CSS</h1>
+                                <h1 className='font-semibold mb-3 text-2xl'>Redux
+                                </h1>
                                 <div className='w-full bg-[#1a1a1a] h-3 rounded-lg'>
-                                    <div className={`w-[85%] overflow-visible h-3 bg-[#ffbd39] relative rounded-lg mt-4`}>
-                                        <span className='absolute top-[-45px] right-0 text-2xl font-semibold  '>85%</span>
+                                    <div className={`w-[80%] overflow-visible h-3 bg-[#ffbd39] relative rounded-lg mt-4`}>
+                                        <span className='absolute top-[-45px] right-0 text-2xl font-semibold  '>80%</span>
                                     </div>
                                 </div>
                             </div>
+
+                           
 
                             <div className='relative mx-4'>
                                 <h1 className='font-semibold mb-3 text-2xl'>HTML5</h1>
@@ -64,6 +67,15 @@ const Skills = () => {
                             </div>
 
                             <div className='relative mx-4'>
+                                <h1 className='font-semibold mb-3 text-2xl'>Tailwind CSS</h1>
+                                <div className='w-full bg-[#1a1a1a] h-3 rounded-lg'>
+                                    <div className={`w-[85%] overflow-visible h-3 bg-[#ffbd39] relative rounded-lg mt-4`}>
+                                        <span className='absolute top-[-45px] right-0 text-2xl font-semibold  '>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='relative mx-4'>
                                 <h1 className='font-semibold mb-3 text-2xl'>BootStrap
                                 </h1>
                                 <div className='w-full bg-[#1a1a1a] h-3 rounded-lg'>
@@ -73,15 +85,7 @@ const Skills = () => {
                                 </div>
                             </div>
 
-                            {/* <div className='relative mx-4'>
-                                <h1 className='font-semibold mb-3 text-2xl'>SEO
-                                </h1>
-                                <div className='w-full bg-[#1a1a1a] h-3 rounded-lg'>
-                                    <div className={`w-[80%] overflow-visible h-3 bg-[#ffbd39] relative rounded-lg mt-4`}>
-                                        <span className='absolute top-[-45px] right-0 text-2xl font-semibold  '>80%</span>
-                                    </div>
-                                </div>
-                            </div> */}
+                            
 
                         </div>
 

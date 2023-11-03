@@ -20,8 +20,8 @@ const About = () => {
         >
 
           <div className="grid md:grid-cols-2 grid-cols-1 mx-4 gap-5">
-            <div className='  items-start justify-center hidden md:flex'>
-              <img src={photo1} alt="" className='h-full object-cover' />
+            <div className='  items-start justify-center hidden md:flex '>
+              <img src={photo1} alt="" className='h-full object-cover ' />
             </div>
 
             <div className='w-full h-full relative flex justify-center  flex-col'>
