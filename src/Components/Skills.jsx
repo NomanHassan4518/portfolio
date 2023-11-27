@@ -28,8 +28,8 @@ const Skills = () => {
                             <div className='relative mx-4'>
                                 <h1 className='font-semibold mb-3 text-2xl'>React</h1>
                                 <div className='w-full bg-[#1a1a1a] h-3 rounded-lg'>
-                                    <div className={`w-[70%] overflow-visible h-3 bg-[#ffbd39] relative rounded-lg mt-4`}>
-                                        <span className='absolute top-[-45px] right-0 text-2xl font-semibold  '>70%
+                                    <div className={`w-[80%] overflow-visible h-3 bg-[#ffbd39] relative rounded-lg mt-4`}>
+                                        <span className='absolute top-[-45px] right-0 text-2xl font-semibold  '>80%
                                         </span>
                                     </div>
 
@@ -60,8 +60,8 @@ const Skills = () => {
                             <div className='relative mx-4'>
                                 <h1 className='font-semibold mb-3 text-2xl'>CSS3</h1>
                                 <div className='w-full bg-[#1a1a1a] h-3 rounded-lg'>
-                                    <div className={`w-[90%] overflow-visible h-3 bg-[#ffbd39] relative rounded-lg mt-4`}>
-                                        <span className='absolute top-[-45px] right-0 text-2xl font-semibold  '>90%</span>
+                                    <div className={`w-[95%] overflow-visible h-3 bg-[#ffbd39] relative rounded-lg mt-4`}>
+                                        <span className='absolute top-[-45px] right-0 text-2xl font-semibold  '>95%</span>
                                     </div>
                                 </div>
                             </div>
@@ -69,8 +69,8 @@ const Skills = () => {
                             <div className='relative mx-4'>
                                 <h1 className='font-semibold mb-3 text-2xl'>Tailwind CSS</h1>
                                 <div className='w-full bg-[#1a1a1a] h-3 rounded-lg'>
-                                    <div className={`w-[85%] overflow-visible h-3 bg-[#ffbd39] relative rounded-lg mt-4`}>
-                                        <span className='absolute top-[-45px] right-0 text-2xl font-semibold  '>85%</span>
+                                    <div className={`w-[90%] overflow-visible h-3 bg-[#ffbd39] relative rounded-lg mt-4`}>
+                                        <span className='absolute top-[-45px] right-0 text-2xl font-semibold  '>90%</span>
                                     </div>
                                 </div>
                             </div>
