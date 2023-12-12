@@ -1,6 +1,6 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
-import zooki from '../zooki_product.jpg'
+import amazonads from '../Amazonads.jpg'
 import ignite from '../ignite.jpg'
 import businex from '../businex.jpg'
 import weatherapp from '../weatherApp.jpg'
@@ -14,10 +14,10 @@ const Projects = () => {
 
     let projects = [
         {
-            img: zooki,
-            name: "Zooki Products",
-            title: "Make Your Marketing Real.",
-            url:"https://zooki-product.vercel.app/"
+            img: amazonads,
+            name: "Campaign manager",
+            title: "Amazon Seller Central.",
+            url:"https://amazonads.vercel.app/"
         },
         {
             img: ignite,
