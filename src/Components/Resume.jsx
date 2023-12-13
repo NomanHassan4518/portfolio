@@ -1,12 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 
 const Resume = () => {
+    const [difference, setDifference] = useState({ years: 0, months: 0 });
     const [ref, inView] = useInView({
         triggerOnce: true, // Only trigger once when the element enters the viewport
         threshold: 0,    // Adjust this threshold as needed
+
     });
+
+    useEffect(() => {
+      // Get current date
+      const currentDate = new Date(2023,9,1);
+  
+      // Set start date to June 2023
+      const startDate = new Date(2023, 6,15); // Month is 0-indexed, so 6 represents June
+  
+      // Calculate difference
+      let years = currentDate.getFullYear() - startDate.getFullYear();
+      let months = currentDate.getMonth() - startDate.getMonth();
+     const differenceInMilliseconds = currentDate - startDate;
+
+// Convert milliseconds to days
+const days = Math.floor(differenceInMilliseconds / (24 * 60 * 60 * 1000));
+      console.log(days);
+  
+      // Adjust for negative months (current month is earlier than start month)
+      if (months < 0) {
+        years--;
+        months += 12;
+      }
+      
+  
+      setDifference({ years, months });
+    }, []); // Empty dependency array ensures the effect runs only once on mount
+  
 
     const resume = [
 
@@ -14,9 +43,11 @@ const Resume = () => {
             year: "06/2023-09/2023",
             degree: "InternShip",
             institution: "Ignite Pakistan",
-            description: "My internship at Ignite Pakistan Software House has been an invaluable experience, allowing me to apply classroom knowledge in a real-world setting. During my time here, I've collaborated with talented professionals, contributed to meaningful projects."
-        }
+            description: "My internship at Ignite Pakistan Software House has been an invaluable experience, allowing me to apply classroom knowledge in a real-world setting. During my time here, I've collaborated with talented professionals, contributed to meaningful projects.",
+            duration:difference
+        },
     ]
+
     return (
         <section id='resume' className=' mt-[5rem] lg:px-12 w-full '>
             <div className="container relative">
@@ -39,7 +70,12 @@ const Resume = () => {
                                 {
                                     resume.map((item, index) => (
                                         <div key={index} className='bg-[#1a1a1a]  rounded-lg px-1 md:px-8 flex flex-col items-center  md:text-start text-center'>
-                                            <h1 className='text-[#ffbd39] font-bold text-3xl mt-4 mb-2 '>{item.year}</h1>
+                                           <div className="flex items-center space-x-5 mb-2 mt-4 ">
+                                           <h1 className='text-[#ffbd39] font-bold text-3xl  '>{item.year}</h1>
+                                           {
+                                            difference.months>12?  <p>{`Years: ${item.duration.years}, Months: ${item.duration.months}`}</p>:<p className=' text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-red-500 to-yellow-300'>{`( Months: ${item.duration?.months} )`}</p>
+                                           }
+                                           </div>
                                             <p className='font-bold text-2xl mb-2 '>{item.degree}</p>
                                             <p className='text-[#8e8e8e] my-2 '>{item.institution}</p>
                                             <p className='text-[#8e8e8e] my-2  text-center'>{item.description}</p>
