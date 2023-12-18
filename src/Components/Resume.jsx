@@ -80,10 +80,10 @@ const days = Math.floor(differenceInMilliseconds / (24 * 60 * 60 * 1000));
                                             <p className='text-[#8e8e8e] my-2 '>{item.institution}</p>
                                             <p className='text-[#8e8e8e] my-2  text-center'>{item.description}</p>
                                             <p>
-                                                <p className='text-[#8e8e8e] my-2'>Work on Frontend library React JS.</p>
-                                                <p className='text-[#8e8e8e] my-2'>Work on CSS libraries like Bootstrap, Tailwind CSS.</p>
-                                                <p className='text-[#8e8e8e] my-2'>Work on API’s with axios and fetch methods.</p>
-                                                <p className='text-[#8e8e8e] my-2 mb-5'>Use Redux for global state management</p>
+                                                <p className='text-[#8e8e8e] my-1'>Work on Frontend library React JS.</p>
+                                                <p className='text-[#8e8e8e] my-1'>Work on CSS libraries like Bootstrap, Tailwind CSS.</p>
+                                                <p className='text-[#8e8e8e] my-1'>Work on API’s with axios and fetch methods.</p>
+                                                <p className='text-[#8e8e8e] my-1 mb-5'>Use Redux for global state management</p>
 
                                             </p>
                                         </div>
