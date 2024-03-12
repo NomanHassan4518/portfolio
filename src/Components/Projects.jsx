@@ -1,6 +1,6 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
-import amazonads from '../Amazonads.jpg'
+import monst from '../monst.jpg'
 import ignite from '../ignite.jpg'
 import businex from '../businex.jpg'
 import weatherapp from '../weatherApp.jpg'
@@ -14,17 +14,19 @@ const Projects = () => {
 
     let projects = [
         {
-            img: amazonads,
-            name: "Campaign manager",
-            title: "Amazon Seller Central.",
-            url:"https://amazonads.vercel.app/"
+            img: weatherapp,
+            name: "ClearSky",
+            title: "Weather Application",
+            url:"https://weatherapp-neon-pi.vercel.app/"
         },
+       
         {
-            img: ignite,
-            name: "Ignite",
-            title: "An Ecommerence Website",
-            url:"https://ignite-3tpa.vercel.app/"
+            img: monst,
+            name: "Monst",
+            title: "Committed to People.",
+            url:"https://monst-flame.vercel.app/"
         },
+       
 
         {
             img: businex,
@@ -33,13 +35,13 @@ const Projects = () => {
             url:"https://businex-l2sc.vercel.app/"
         },
 
+       
         {
-            img: weatherapp,
-            name: "ClearSky",
-            title: "Weather Application",
-            url:"https://weatherapp-neon-pi.vercel.app/"
+            img: ignite,
+            name: "Ignite",
+            title: "An Ecommerence Website",
+            url:"https://ignite-3tpa.vercel.app/"
         },
-      
 
     ]
     return (
