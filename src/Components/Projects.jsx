@@ -35,7 +35,7 @@ const Projects = () => {
             url:"https://businex-l2sc.vercel.app/"
         },
 
-       
+            
         {
             img: ignite,
             name: "Ignite",
