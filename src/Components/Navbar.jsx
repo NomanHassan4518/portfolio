@@ -43,7 +43,7 @@ const Navbar = () => {
    ]
    return (
 
-      <header className='flex w-full  z-10 bg-black  h-20 px-12 items-center border-b-2 border-yellow-300 justify-between  top-0'>
+      <header className='flex w-full  z-10 bg-black  h-20 px-12 items-center border-b-2 border-yellow-300 justify-between sticky top-0'>
          <div >
             <Link to='/' className='text-white text-[30px] font-[900] title'>Noman</Link>
          </div>
