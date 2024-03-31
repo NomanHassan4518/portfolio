@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 const Footer = () => {
  
   return (
-    <section className='xl:px-16 px-5 my-20'>
+    <section className='xl:px-16 px-5 pb-20 pt-12 border-t-2 border-yellow-300'>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-1">
         <div className=" px-4 ">
           <h1 className='my-6 text-3xl font-bold'>About</h1>
@@ -97,7 +97,7 @@ const Footer = () => {
 
   
 
-        <div className=" flex flex-col md:items-center">
+        <div className=" flex flex-col md:items-center ">
           <div className=" px-4">
             <h1 className='my-6 text-3xl font-bold'>Have a Questions?</h1>
             <div className='text-[#b3b3a8] space-y-5 text-lg'>

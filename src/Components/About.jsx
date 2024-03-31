@@ -35,22 +35,30 @@ const About = () => {
                   <p className='w-[150px] font-[600] text-xl '>Name:</p>
                   <span className='text-[#8e8e8e] font-semibold'>Noman Hassan</span>
                 </li>
+                <li className='flex lg:items-center items-strat'>
+                  <p className='w-[150px] font-[600] text-xl '>Reg. No:</p>
+                  <span className='text-[#8e8e8e] font-semibold'>4518-FBAS/BSCS4/F21</span>
+                </li>
             
                 <li className='flex lg:items-center items-strat'>
                   <p className='w-[150px] font-[600] text-xl '>Address:</p>
                   <span className='text-[#8e8e8e] font-semibold'>Islamabad</span>
                 </li>
-                <li className='flex lg:items-center items-strat'>
+                {/* <li className='flex lg:items-center items-strat'>
                   <p className='w-[150px] font-[600] text-xl '>Zip code:</p>
                   <span className='text-[#8e8e8e] font-semibold'>44210</span>
-                </li>
+                </li> */}
                 <li className='flex lg:items-center items-strat'>
                   <p className='w-[150px] font-[600] text-xl '>Email:</p>
-                  <span className='text-[#8e8e8e] font-semibold'>malikhassanhu55@gmail.com</span>
+                  <span className='text-[#8e8e8e] font-semibold'>noman.bscs4518@iiu.edu.pk</span>
                 </li>
                 <li className='flex lg:items-center items-strat'>
                   <p className='w-[150px] font-[600] text-xl '>Phone:</p>
                   <span className='text-[#8e8e8e] font-semibold'>+923195586305</span>
+                </li>
+                <li className='flex lg:items-center items-strat '>
+                  <p className='w-[164px] font-[600] text-xl underline text-red-600 '>Group Members:</p>
+                  <span className='text-[#8e8e8e] font-semibold'>Shoaib Ahmed, Muhammad Luqman</span>
                 </li>
               </ul>
 
