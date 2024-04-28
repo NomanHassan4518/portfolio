@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { BsFillSignpost2Fill } from 'react-icons/bs'
 import { IoMdCall } from 'react-icons/io'
 import { SiMinutemailer } from 'react-icons/si'
-import { FaGlobeAfrica } from 'react-icons/fa'
+import { FaLinkedin } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
@@ -28,9 +28,9 @@ const Contact = () => {
             description: "malikhassanhu55@gmail.com"
         },
         {
-            icon: <FaGlobeAfrica />,
-            name: "website",
-            description: "https://nomanhassan.vercel.app/"
+            icon: <FaLinkedin />,
+            name: "Linkedin",
+            description: "https://www.linkedin.com/in/noman-hassan-36a983270/"
         }
     ]
     return (
@@ -62,7 +62,7 @@ const Contact = () => {
                                     </div>
                                     <div className='text-center'>
                                         <p className='uppercase text-xl my-6 font-semibold'>{item.name}</p>
-                                       {index===3 ? <Link className="text-lg text-white font-semibold underline" to={item.description} target='_blank'>Portfolio</Link>: <p className="text-lg text-white font-semibold">{item.description}</p>}
+                                       {index===3 ? <Link className="text-lg text-white hover:text-yellow-400 px-3 md:px-0 font-semibold underline" to={item.description} target='_blank'>{item.description}</Link>: <p className="text-lg text-white font-semibold">{item.description}</p>}
                                     </div>
                                 </div>
 

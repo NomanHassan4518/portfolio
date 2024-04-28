@@ -30,7 +30,7 @@ const Footer = () => {
                   offset={-70}
                   duration={500}
                   className='flex items-center space-x-1 text-lg cursor-pointer hover:text-[#ffbd39]'>
-                  <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
+                  <span><MdOutlineArrowRightAlt className='text-[20px] text-yellow-300' /></span>
                   <span>Home</span>
                 </Link>
               </li>
@@ -43,7 +43,7 @@ const Footer = () => {
                   offset={-70}
                   duration={500}
                   className='flex items-center space-x-1 text-lg cursor-pointer hover:text-[#ffbd39]'>
-                  <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
+                  <span><MdOutlineArrowRightAlt className='text-[20px] text-yellow-300' /></span>
                   <span>About</span>
                 </Link>
               </li>
@@ -57,7 +57,7 @@ const Footer = () => {
                   offset={-70}
                   duration={500}
                   className='flex items-center space-x-1 text-lg cursor-pointer hover:text-[#ffbd39]'>
-                  <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
+                  <span><MdOutlineArrowRightAlt className='text-[20px] text-yellow-300' /></span>
                   <span>Resume</span>
                 </Link>
               </li>
@@ -71,7 +71,7 @@ const Footer = () => {
                   offset={-70}
                   duration={500}
                   className='flex items-center space-x-1 text-lg cursor-pointer hover:text-[#ffbd39]'>
-                  <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
+                  <span><MdOutlineArrowRightAlt className='text-[20px] text-yellow-300' /></span>
                   <span>Project</span>
                 </Link>
               </li>
@@ -85,7 +85,7 @@ const Footer = () => {
                   offset={-70}
                   duration={500}
                   className='flex items-center space-x-1 text-lg cursor-pointer hover:text-[#ffbd39]'>
-                  <span><MdOutlineArrowRightAlt className='text-[20px]' /></span>
+                  <span><MdOutlineArrowRightAlt className='text-[20px] text-yellow-300' /></span>
                   <span>Contact</span>
                 </Link>
               </li>
@@ -102,15 +102,15 @@ const Footer = () => {
             <h1 className='my-6 text-3xl font-bold'>Have a Questions?</h1>
             <div className='text-[#b3b3a8] space-y-5 text-lg'>
               <div className='flex items-center space-x-3'>
-                <span><IoLocation /></span>
+                <span><IoLocation className='text-yellow-300'/></span>
                 <span>Islamabad</span>
               </div>
               <div className='flex items-center space-x-3'>
-                <span><IoMdCall /></span>
+                <span><IoMdCall className='text-yellow-300'/></span>
                 <span>+923195586305</span>
               </div>
               <div className='flex items-center space-x-3'>
-                <span><FiMail /></span>
+                <span><FiMail className='text-yellow-300'/></span>
                 <span>malikhassanhu55@gmail.com</span>
               </div>
             </div>
