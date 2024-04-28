@@ -13,6 +13,15 @@ const Navbar = () => {
       setIsOpen(false)
    }
 
+
+      // const drawerStyle = {
+      //   backgroundColor: 'black',
+      //   color: 'white ' ,
+      // }
+ 
+
+   
+
    let navItem = [
       {
          url:"home",
@@ -129,9 +138,10 @@ const Navbar = () => {
             onClose={drawerClose}
             direction='right'
             className='drawer'
+            // style={drawerStyle}
          >
             <div>
-               <ul className='space-y-6'>
+               <ul className='space-y-6 !text-white'>
                 {
                   navItem.map((item)=>(
                      <li >
@@ -143,7 +153,7 @@ const Navbar = () => {
                         offset={-70}
                         duration={500}
                         onClick={drawerClose}
-                        className='text-black cursor-pointer text-xl'
+                        className='!text-white cursor-pointer text-xl'
                      >{item.name}</Link>
 
                   </li>

@@ -34,7 +34,7 @@ const Contact = () => {
         }
     ]
     return (
-        <section id='contact'  className='relative  mt-[7rem] lg:px-12 sm:px-2 w-full '>
+        <section id='contact'  className='relative  mt-[7rem] lg:px-12 sm:px-2 w-full pb-12'>
             <div className="container relative">
                 <div
                     ref={ref}

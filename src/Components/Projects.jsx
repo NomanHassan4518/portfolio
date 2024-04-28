@@ -2,7 +2,7 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import monst from '../monst.jpg'
 import ignite from '../ignite.jpg'
-import businex from '../businex.jpg'
+import ecommerce from '../ecommerce.png'
 import weatherapp from '../weatherApp.jpg'
 import { Link } from 'react-router-dom';
 
@@ -29,10 +29,10 @@ const Projects = () => {
        
 
         {
-            img: businex,
-            name: "Businex",
-            title: "Provide best Business Solutions",
-            url:"https://businex-l2sc.vercel.app/"
+            img: ecommerce,
+            name: "alquila tu hobby",
+            title: "Ecommerce Template",
+            url:"https://ecommerce-template-two.vercel.app/"
         },
 
             
@@ -61,7 +61,7 @@ const Projects = () => {
                         <div className='grid grid-cols-12  gap-5 mt-12'>
                             {
                                 projects.map((item, index) => (
-                                    <div key={index} className={`${index === 0 || index === 3 || index === 5 ? "md:col-span-4 col-span-12 mx-4 " : "md:col-span-8 col-span-12 mx-4"}`}>
+                                    <div key={index} className={`${index === 0 || index === 3 || index === 5 ? "md:col-span-4 col-span-12 mx-4 border " : "md:col-span-8 col-span-12 mx-4 border"}`}>
                                     
                                       <Link to={item.url} target='_blank'>
                                       <div className="w-[100%] h-72  object-cover relative group   ">
