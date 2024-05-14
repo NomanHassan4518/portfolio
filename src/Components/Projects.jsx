@@ -1,7 +1,7 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import monst from '../monst.jpg'
-import ignite from '../ignite.jpg'
+import thebooksplatform from '../thebooksplatform.png'
 import ecommerce from '../ecommerce.png'
 import weatherapp from '../weatherApp.jpg'
 import { Link } from 'react-router-dom';
@@ -21,10 +21,10 @@ const Projects = () => {
         },
        
         {
-            img: monst,
-            name: "Monst",
-            title: "Committed to People.",
-            url:"https://monst-flame.vercel.app/"
+            img: thebooksplatform,
+            name: "The Books Platform",
+            title: "An Online Book Shop.",
+            url:"https://booksplatform-shpg.vercel.app/"
         },
        
 
@@ -37,10 +37,10 @@ const Projects = () => {
 
             
         {
-            img: ignite,
-            name: "Ignite",
-            title: "An Ecommerence Website",
-            url:"https://ignite-3tpa.vercel.app/"
+            img: monst,
+            name: "Monst",
+            title: "Committed to People.",
+            url:"https://monst-flame.vercel.app/"
         },
 
     ]
