@@ -1,9 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Link } from 'react-scroll';
 import { Drawer } from 'antd';
 
 const Navbar = () => {
    const [isOpen, setIsOpen] = useState(false)
+   const [isScrolled, setIsScrolled] = useState('transparent');
+
+   useEffect(() => {
+     const handleScroll = () => {
+       const scrollTop = window.pageYOffset;
+       if (scrollTop > 50) {
+         setIsScrolled('bg-black');
+       } else {
+         setIsScrolled('transparent');
+       }
+     };
+ 
+     window.addEventListener('scroll', handleScroll);
+ 
+     // Cleanup
+     return () => {
+       window.removeEventListener('scroll', handleScroll);
+     };
+   }, []);
+ 
 
    const drawerOpen = () => {
       setIsOpen(true)
@@ -52,7 +72,7 @@ const Navbar = () => {
    ]
    return (
 
-      <header className='flex w-full  z-10 bg-black  h-20 px-12 items-center border-b-2 border-yellow-300 justify-between sticky top-0'>
+      <header className={`flex w-full ${isScrolled}  z-10  h-20 px-12 items-center border-b-2 border-yellow-300 justify-between sticky top-0`}>
          <div >
             <Link to='/' className='text-white text-[30px] font-[900] title'>Noman</Link>
          </div>
