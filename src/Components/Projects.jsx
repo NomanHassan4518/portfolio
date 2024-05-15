@@ -23,7 +23,7 @@ const Projects = () => {
         {
             img: thebooksplatform,
             name: "The Books Platform",
-            title: "An Online Book Shop.",
+            title: "MERN Stack Project",
             url:"https://booksplatform-shpg.vercel.app/"
         },
        
