@@ -1,9 +1,11 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
-import monst from '../monst.jpg'
+import texiUp from '../TexiUp.png'
 import thebooksplatform from '../thebooksplatform.png'
 import ecommerce from '../ecommerce.png'
 import weatherapp from '../weatherApp.jpg'
+import businex from '../businex.jpg'
+import zoki from '../zooki.jpg'
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -37,11 +39,27 @@ const Projects = () => {
 
             
         {
-            img: monst,
-            name: "Monst",
-            title: "Committed to People.",
-            url:"https://monst-flame.vercel.app/"
+            img: texiUp,
+            name: "TaxiUp",
+            title: "Commitment to work",
+            url:"https://taxi-up.vercel.app/"
         },
+
+        {
+            img: zoki,
+            name: "Zooki Product",
+            title: "Make Your Marketing Real.",
+            url:"https://zooki-product.vercel.app/"
+        },
+            
+        {
+            img: businex,
+            name: "Businex",
+            title: "Provide best Business Solutions",
+            url:"https://businex-ten.vercel.app/"
+        },
+            
+      
 
     ]
     return (
@@ -61,7 +79,7 @@ const Projects = () => {
                         <div className='grid grid-cols-12  gap-5 mt-12'>
                             {
                                 projects.map((item, index) => (
-                                    <div key={index} className={`${index === 0 || index === 3 || index === 5 ? "md:col-span-4 col-span-12 mx-4 border " : "md:col-span-8 col-span-12 mx-4 border"}`}>
+                                    <div key={index} className={`${index === 0 || index === 3 || index === 4 ? "md:col-span-4 col-span-12 mx-4 border " : "md:col-span-8 col-span-12 mx-4 border"}`}>
                                     
                                       <Link to={item.url} target='_blank'>
                                       <div className="w-[100%] h-72  object-cover relative group   ">
