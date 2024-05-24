@@ -2,7 +2,6 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import texiUp from '../TexiUp.png'
 import thebooksplatform from '../thebooksplatform.png'
-import ecommerce from '../ecommerce.png'
 import weatherapp from '../weatherApp.jpg'
 import businex from '../businex.jpg'
 import zoki from '../zooki.jpg'
@@ -28,16 +27,7 @@ const Projects = () => {
             title: "MERN Stack Project",
             url:"https://booksplatform-shpg.vercel.app/"
         },
-       
-
-        {
-            img: ecommerce,
-            name: "alquila tu hobby",
-            title: "Ecommerce Template",
-            url:"https://ecommerce-template-two.vercel.app/"
-        },
-
-            
+         
         {
             img: texiUp,
             name: "TaxiUp",
@@ -82,8 +72,8 @@ const Projects = () => {
                                     <div key={index} className={`${index === 0 || index === 3 || index === 4 ? "md:col-span-4 col-span-12 mx-4 border " : "md:col-span-8 col-span-12 mx-4 border"}`}>
                                     
                                       <Link to={item.url} target='_blank'>
-                                      <div className="w-[100%] h-72  object-cover relative group   ">
-                                            <img src={item.img} alt="" className=' h-full w-full  lg:opacity-100 opacity-40' />
+                                      <div className="w-[100%] h-72   relative group   ">
+                                            <img src={item.img} alt="" className=' h-full w-full  lg:opacity-100 opacity-40 object-fit' />
                                             
                                             <div className='absolute top-0 lg:bg-[#ffbd39]  h-full w-full lg:scale-0 scale-100 group-hover:scale-100  flex items-center justify-center  transition-all  duration-1000   ease-in-out '>
                                                 <div className='max-w-[70%]  text-center '>
